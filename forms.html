@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #5B91A3;
+            font-family: "Old Standard TT", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        form {
+            width: 70%;
+            border: 1px solid #EBE2CC;
+            padding: 16px;
+            margin: auto;
+        }
+
+        label{
+            color: #202734;
+        }
+        .full-width{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 12 px;
+        }
+        button{ 
+            width: 100%;
+            border-color:aquamarine;
+            padding: 16px;
+            color: #ab1212;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--text, email, password, number, date, radio, checkbox, select, submit -->
+    <form>
+        <br>
+        <label for="full_name">Names</label>
+        <input class="full-width" type="text" required id="full_name" name="full name" placeholder="Enter your full name">
+        <br>
+
+        
+        <label for="email">Email</label>
+        <input class="full-width" type="email" required id="email" name="email" placeholder="Enter your email">
+        <label for="password">Password</label>
+        <input class="full-width" type="password" required id="password" name="password" placeholder="Enter your password">
+        <br>
+        <label for="datetime">Date and Time</label>
+        <input class="full-width" type="datetime-local" id="datetime" name="datetime">
+        <br>
+        <label for="age">Age</label>
+        <input class="full-width" type="number" min="0" max="150" step="0.01" required id="age" name="age" placeholder="Enter your age">
+        <br>
+        <label  for="dob">Date of Birth</label>
+        <input class="full-width" type="date" min="2000-01-01" max="2008-12-31" required id="dob" name="dob">
+        <br>
+        <!-- Name must be the same -->
+        <br>
+        <label >select your gender</label>
+        <br>
+        <input type="radio" required id="M" name="Sex">
+        <label for="M">Male</label>
+        <br>
+        <input type="radio" required id="F" name="Sex">
+        <label for="F">Female</label>
+        <br>
+        <label>select your favorite food</label>
+        <br>
+        <input type="checkbox" required id="x" name="food">
+        <label for="x">Pizza</label>
+
+        <br>
+        <input type="checkbox" required id="y" name="food">
+        <label for="y">Burger</label>
+        <br>
+        <input type="checkbox" required id="z" name="food">
+        <label for="z">Pasta</label>
+
+
+        <br>
+        <label>select your city</label>
+        <br>
+        <select class="full-width">
+            <option value="">Select a city</option>
+            <option value="1">Nairobi</option>
+            <option value="2">Nakuru</option>
+            <option value="3">Mombasa</option>
+            <option value="4">Kisumu</option>
+            <option value="5">Eldoret</option>
+        </select>
+        <!-- slider -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <button type="submit  ">Submit</button>
+    </form>
+    >
+
+
+
+
+</body>
+
+</html>
