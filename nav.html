@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Instrument Serif", serif;
+            font-optical-sizing: auto;
+            margin: 0;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            /* background-color: #8e4949; */
+           border-bottom: 1px solid #c1c1c1;
+        }
+
+        .content {
+            /* background-color: #988f14; */
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 48px;
+            height: 48px;
+        }
+
+        .content ul {
+            display: flex;
+            /* remove bullet points */
+            list-style-type: none;
+        }
+
+        .content li {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .content a {
+            text-decoration: none;
+            /* color: #fff; */
+            padding: 0.2px 0.2px;
+            text-transform: capitalize;
+
+        }
+
+        .content a:hover {
+            /* color: #c1c1c1; */
+            background-color: #000;
+            text-decoration: underline;
+            border-bottom: 1px solid #000;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="content">
+            <div class="logo">
+                <img src="images/icons8-residential-64.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Get help</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+</body>
+
+</html>
